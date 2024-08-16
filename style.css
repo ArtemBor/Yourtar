@@ -502,21 +502,30 @@ h1 {
     padding-left: 16px;
     height: 60px;
     align-items: center;
+    cursor: pointer;
+    transition: background-color 0.15s;
 }
 .spoiler__header:hover {
     font-family: Lato;
     font-weight: 400;
     line-height: 24px;
     background-color: #0F3030;
-    transition: background-color 0.15s;
 }
 .spoiler__button {
     width: 28px;
     height: 28px;
     margin-right: 16px;
+    transition: background-color 0.15s;
+    border-radius: 50%;
 }
-.spoiler__button-img:hover {
-    content: url(./images/icon2.svg);
+.spoiler__header:hover  .spoiler__button {
+    background-color: #ffffff;
+}
+.spoiler__header:hover  .spoiler__button-img {
+    filter: brightness(0) saturate(100%) invert(16%) sepia(70%) saturate(326%) hue-rotate(131deg) brightness(93%) contrast(102%);
+}
+.spoiler__button-img {
+    transition: filter 0.15s;
 }
 .spoiler__content {
     
