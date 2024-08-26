@@ -39,5 +39,33 @@ numbers.forEach((number) => {
     console.log(number)
 })
 
+
+for(let a = 0; a<numbers.length; a=a+1) {
+    console.log('a=', numbers[a])
+}
+
+let result = [2,4,6,8];
+let b = 1;
+result.forEach(function(resultItem){
+    b = resultItem * b;
+})
+console.log(b)
+
+let name = ['A', 'R', 'T', 'E', 'M', 'B', 'O', 'R'];
+
+let sum = '';
+
+name.forEach(function(sumResult){
+    sum = sum + sumResult
+})
+
+for (let i = 0; i<name.length; i=i+1)
+    sum = sum + name[i]
+console.log(sum)
+
+// сделать перебор 5 разных массивов через for и  foteach
+
+
+
 closeButton.addEventListener('click', onCloseButtonClick)
 button.addEventListener('click', onButtonClick)
