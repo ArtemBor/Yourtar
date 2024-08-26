@@ -1,5 +1,5 @@
 body {
-    background-color: #151919 ;
+    background-color: #151919;
     margin: 0px;
     color: #ffffff;
 }
@@ -69,6 +69,10 @@ video, img {
     display: flex; /* определяет тип отображения элемента, как он будет отображаться на веб-странице */
     align-items: center; /* выравнивание элементов вертикально */
     gap: 30px; /* задаёт отступы между колонками и рядами */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #151919;
 }
 
 .main-header__image {
@@ -454,14 +458,15 @@ h1 {
     background: linear-gradient(180deg, #151C1C 0%, #054C4B 100%);
     height: fit-content;
 }
-.algorithm__text-list-item--primery {
+.algorithm__text-list-item--primary {
     background: transparent;
     border: 2px solid #0F3030;
     max-width: 164px;
+    padding: 14px;
 }
-.algorithm__text-list-item--primery2 {
+.algorithm__text-list-item--primary2 {
     position: relative;
-    top: -49px;
+    top: -46px;
 }
 .algorithm__text-list-item-title {
     margin-top: 0;
