@@ -63,9 +63,17 @@ for (let i = 0; i<name.length; i=i+1)
     sum = sum + name[i]
 console.log(sum)
 
-// сделать перебор 5 разных массивов через for и  foteach
+// сделать перебор 5 разных массивов через for и  foreach
+let per = [1,2,3,4,5,6]
+let summa = 0
+for(i=0; i<per.length; i=i+1)
+    console.log('per=',i)
 
-
+per.forEach(function(result) {
+    summa = summa+result;
+    console.log(summa)
+}
+)
 
 closeButton.addEventListener('click', onCloseButtonClick)
 button.addEventListener('click', onButtonClick)

@@ -132,10 +132,10 @@ video, img {
 
 .about {
     padding-bottom: 130px;
-    padding-top: 170px;
+    padding-top: 155px;
     background-image: url('./images/about-background.png');
     background-repeat: no-repeat;
-    background-position: right 105px;
+    background-position: right 89px;
 }
 h1 {
     font-family: Jost;
@@ -145,7 +145,7 @@ h1 {
     text-align: left;
     text-transform: uppercase;
     color: #ffffff;
-    margin-bottom: 12px;
+    margin-bottom: 11px;
 }
 
 
@@ -166,7 +166,7 @@ h1 {
     line-height: 21px;
     text-align: left;
     color: #CCD9D9;
-    margin-bottom: 214px;
+    margin-bottom: 235px;
 }
 .about__actions {
     display: flex;
@@ -182,7 +182,7 @@ h1 {
     color: #ffffff;
     border: 2px solid #1C8785;
     background-color: #1C8785;
-    padding: 15px 30px;
+    padding: 13px 30px;
     border-radius: 3px;
     width: 100%;
 }
@@ -206,6 +206,9 @@ h1 {
     display: flex;
     justify-content: space-between;
     padding-bottom: 130px;
+    position: relative;
+    top: 30px;
+    
 }
 .main-whatwecando__work-item {
     display: flex;
@@ -217,6 +220,7 @@ h1 {
     font-weight: 400;
     line-height: 16.8px;
     text-align: center;
+    width: 100%;
 }
 .main-whatwecando__image {
     height: 56px;
@@ -234,8 +238,8 @@ h1 {
 .main-aboutproject {
     background-image:  url(./images/about-project.png);
     background-repeat: no-repeat;
-    background-position: right 16px top 0;
-    padding-top: 114px;
+    background-position: right 16px top 46px;
+    padding-top: 161px;
 }
 
 .main-aboutproject__project {
@@ -260,7 +264,8 @@ h1 {
 }
 
 .main-project-video {
-    padding-top: 30px;
+    padding-top: 17px;
+    margin-bottom: 133px;
 }
 .main-project-video__text {
     font-family: Lato;
@@ -279,7 +284,7 @@ h1 {
 }
 
 .main-benefit__who:not(:first-of-type) {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .main-benefit__title {
@@ -290,7 +295,7 @@ h1 {
     line-height: 30px;
     text-align: left;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 }
 
 .main-benefit__who-buisness-men {
@@ -322,6 +327,11 @@ h1 {
     justify-content: space-between;
     gap: 16px; /* отступы */
     flex-wrap: wrap;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+
 }
 
 .main-benefit__text-item {
@@ -335,6 +345,10 @@ h1 {
     text-align: center;
     border-radius: 4px;
 
+}
+.main-benefit__text-item1 {
+    min-height: 158px;
+    margin-top: 8px;
 }
 .main-benefit__text-item--primary {
     border: none;
@@ -373,8 +387,8 @@ h1 {
     line-height: 28px;  
     text-align: left;
     color: #ffffff;
-    padding-top: 36px;
-    padding-bottom: 3px;
+    padding-top: 35px;
+    padding-bottom: 4px;
 
 }
 .radio input {
@@ -386,7 +400,7 @@ h1 {
 .radio label {
     position: relative;
     width: 100%;
-    padding: 12px 16px 12px 16px;
+    padding: 10px 14px 10px 14px;
     border-radius: 4px;
     border: 2px solid #0F3030;
     display: block;
@@ -442,7 +456,7 @@ h1 {
     text-transform: uppercase;
     padding-bottom: 30px;
 }
-.algorithm__text-list {
+.algorithm__list {
     display: flex;
     justify-content: space-between;
     gap: 16px;
