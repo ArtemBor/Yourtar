@@ -64,16 +64,27 @@ for (let i = 0; i<name.length; i=i+1)
 console.log(sum)
 
 // сделать перебор 5 разных массивов через for и  foreach
-let per = [1,2,3,4,5,6]
-let summa = 0
-for(i=0; i<per.length; i=i+1)
-    console.log('per=',i)
+// Создаем 5 разных массивов
+const array1 = [1, 2, 3];
+const array2 = ['a', 'b', 'c'];
+const array3 = [true, false, true];
+const array4 = [1.1, 2.2, 3.3];
+const array5 = ['apple', 'banana', 'cherry'];
 
-per.forEach(function(result) {
-    summa = summa+result;
-    console.log(summa)
+// Сохраним массивы в один общий массив
+const allArrays = [array1, array2, array3, array4, array5];
+
+// Перебор массивов с помощью for
+console.log("Перебор массивов с помощью for:");
+for (let i = 0; i < allArrays.length; i++) {
+    console.log(`Массив ${i + 1}:`, allArrays[i]);
 }
-)
+// Перебор массивов с помощью forEach
+console.log("\nПеребор массивов с помощью forEach:");
+allArrays.forEach((array, index) => {
+    console.log(`Массив ${index + 1}:`, array);
+});
+
 
 closeButton.addEventListener('click', onCloseButtonClick)
 button.addEventListener('click', onButtonClick)
