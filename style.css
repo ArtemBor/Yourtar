@@ -205,9 +205,8 @@ h1 {
 .main-whatwecando__work-list {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 130px;
-    position: relative;
-    top: 30px;
+    padding-bottom: 100px;
+    padding-top: 30px;
     
 }
 .main-whatwecando__work-item {
@@ -229,6 +228,8 @@ h1 {
 .container {
     padding-left: 16px;
     padding-right: 16px;
+    max-width: 375px;
+    margin: 0 auto;
 }
 .footer__logo {
     width: 120px;
@@ -427,7 +428,116 @@ h1 {
     top: 12px;
     left: 16px;
 }
+.select--active .select__button-img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(94%) saturate(22%) hue-rotate(318deg) brightness(104%) contrast(107%);
+    transform: rotate(90deg);
+}
+.select--active .select__options {
+    display: block;
+}
+.select--active .select__button {
+    background-color: #0F3030;
+} 
 
+.select__button {
+    transition: background-color 0.15s;
+}
+.select__button-img {
+    filter: brightness(0) saturate(100%) invert(17%) sepia(45%) saturate(499%) hue-rotate(131deg) brightness(87%) contrast(101%);
+    transition: filter 0.15s, transform 0.15s;
+}
+.select__button:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(94%) saturate(22%) hue-rotate(318deg) brightness(104%) contrast(107%);
+}
+.select__button:hover {
+    background-color: #0F3030;
+}
+.select__options {
+    display: none;
+}
+.calculator__table {
+    background: linear-gradient(#151C1C,#054C4B);
+    padding: 25px 16px 25px 16px;
+    border-radius: 4px;
+}
+table {
+    width: 100%;
+}
+table caption h3 {
+    text-align: left;
+    font-family: Jost;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+table caption p {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33.6px;
+    color: #0DCBC8;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.calculator__first-column {
+    min-width: 122px;
+}
+.calculator__first-column--primary {
+    font-family: Jost;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+thead th {
+
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: #CCD9D9;
+    width: 59px;
+    padding: 0 4px 12px 0;
+
+}
+
+tbody td,
+tfoot td {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.8px;
+    padding: 0 3px 12px 0;
+}
+
+tfoot td {
+    text-align: left;
+}
+
+/*tbody tr td:first-of-type {
+     стили для первого ТД внутри ТР 
+    color: red;
+}
+
+tfoot tr td:first-of-type {
+    стили для первого ТД внутри ТР
+    color: green;
+}
+*/
+.calculator__tfoot-summ {
+    color: #0DCBC8;
+}
+.calculator__table-text {
+font-family: Lato;
+font-size: 12px;
+font-weight: 400;
+line-height: 16.8px;
+color:#CCD9D9;
+
+}
 .question {
     background-image: url(./images/FAQ.png);
     background-repeat: no-repeat;
