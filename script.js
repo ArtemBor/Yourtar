@@ -4,6 +4,8 @@ const closeButton = document.querySelector ('.main-header__menu-button')
 const anchors = document.querySelectorAll('.main-header__navigation-item a')
 const about = document.querySelector ('.main-aboutproject__project')
 const spoilers = document.querySelectorAll ('.spoiler')
+const select = document.querySelector('.select')
+const selectButton = select.querySelector('.select__button')
 
 const onButtonClick = () => {
     menu.classList.add ('main-header__menu--active')
@@ -32,6 +34,17 @@ const onEachSpoiler = (spoiler) => {
 }
 
 spoilers.forEach(onEachSpoiler)
+
+function onSelectButtonClick () {
+    select.classList.toggle ('select--active');
+}
+
+selectButton.addEventListener('click', onSelectButtonClick)
+
+
+
+
+
 
 const numbers = [1,2,3,4]
 
