@@ -6,6 +6,8 @@ const about = document.querySelector ('.main-aboutproject__project')
 const spoilers = document.querySelectorAll ('.spoiler')
 const select = document.querySelector('.select')
 const selectButton = select.querySelector('.select__button')
+const selectButtonText = select.querySelector('.select__button-text')
+const selectCheckboxes = Array.from(select.querySelectorAll('.checkbox'))
 
 const onButtonClick = () => {
     menu.classList.add ('main-header__menu--active')
@@ -37,14 +39,34 @@ spoilers.forEach(onEachSpoiler)
 
 function onSelectButtonClick () {
     select.classList.toggle ('select--active');
+    // select.textContent = 'adsasadssadasdasdasd';
 }
 
+selectCheckboxes.forEach(function onEachSelectCheckbox (checkbox) {
+    function onCheckboxChange () {
+        const checkedCheckboxes = selectCheckboxes.filter(function (item) {
+            return item.querySelector('input').checked
+        })
+        console.log (checkedCheckboxes)
+        // map созает новый массив из элементов которые возвращаются из переданной функции
+        const mappedCheckboxes = checkedCheckboxes.map(function (item) {
+            return item.querySelector('label').textContent
+        })
+        console.log (mappedCheckboxes)
+        // из массива в строку с указанным символом [1,2,3] => '1, 2, 3'
+        const nextLabel = mappedCheckboxes.join(', ')
+        console.log(nextLabel)
+        if (mappedCheckboxes.length > 0) {
+            selectButtonText.textContent = nextLabel
+        } else {
+            selectButtonText.textContent = 'Модуль'
+        }
+    }
+    checkbox.querySelector('input').addEventListener ('change', onCheckboxChange)
+}
+)
+
 selectButton.addEventListener('click', onSelectButtonClick)
-
-
-
-
-
 
 const numbers = [1,2,3,4]
 
