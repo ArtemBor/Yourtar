@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+
+.button {
+    position: absolute;
+    top: 20px;
+    padding: 10px 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.redBlock {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    transition: left 0.15s;
+}
+.redBlock--open {
+    left: 0;
+    
+}

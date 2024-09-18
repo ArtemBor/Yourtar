@@ -4,8 +4,7 @@ const closeButton = document.querySelector ('.main-header__menu-button')
 const anchors = document.querySelectorAll('.main-header__navigation-item a')
 const about = document.querySelector ('.main-aboutproject__project')
 const spoilers = document.querySelectorAll ('.spoiler')
-const select = document.querySelector('.select')
-const selectButton = select.querySelector('.select__button')
+const select = document.querySelectorAll ('.select')
 
 const onButtonClick = () => {
     menu.classList.add ('main-header__menu--active')
@@ -23,6 +22,10 @@ anchors.forEach((item) => {
     item.addEventListener ('click', closeMenu)
 })
 
+closeButton.addEventListener('click', onCloseButtonClick)
+button.addEventListener('click', onButtonClick)
+
+
 const onEachSpoiler = (spoiler) => {
     const spoilerHeader = spoiler.querySelector('.spoiler__header')
 
@@ -35,15 +38,43 @@ const onEachSpoiler = (spoiler) => {
 
 spoilers.forEach(onEachSpoiler)
 
-function onSelectButtonClick () {
-    select.classList.toggle ('select--active');
+
+
+const onEachSelect = (select) => {
+    const selectButton = select.querySelector ('.select__button')
+    const selectButtonText = select.querySelector ('.select__button-text')
+    const selectCheckboxes = Array.from(select.querySelectorAll('.checkbox'))
+
+    const onSelectButtonClick = () => {
+        select.classList.toggle ('select--active')
+    }
+    selectCheckboxes.forEach(function onEachSelectCheckbox (checkbox) {
+        function onCheckboxChange () {
+            const checkedCheckboxes = selectCheckboxes.filter(function (item) {
+                return item.querySelector('input').checked
+            })
+            console.log (checkedCheckboxes)
+            // map созает новый массив из элементов которые возвращаются из переданной функции
+            const mappedCheckboxes = checkedCheckboxes.map(function (item) {
+                return item.querySelector('label').textContent
+            })
+            console.log (mappedCheckboxes)
+            // из массива в строку с указанным символом [1,2,3] => '1, 2, 3'
+            const nextLabel = mappedCheckboxes.join(', ')
+            console.log(nextLabel)
+            if (mappedCheckboxes.length > 0) {
+                selectButtonText.textContent = nextLabel
+            } else {
+                selectButtonText.textContent = 'Модуль'
+            }
+        }
+        checkbox.querySelector('input').addEventListener ('change', onCheckboxChange)
+    }
+    )
+    selectButton.addEventListener ('click', onSelectButtonClick)
 }
-
-selectButton.addEventListener('click', onSelectButtonClick)
-
-
-
-
+select.forEach(onEachSelect)
+    
 
 
 const numbers = [1,2,3,4]
@@ -63,18 +94,6 @@ result.forEach(function(resultItem){
     b = resultItem * b;
 })
 console.log(b)
-
-let name = ['A', 'R', 'T', 'E', 'M', 'B', 'O', 'R'];
-
-let sum = '';
-
-name.forEach(function(sumResult){
-    sum = sum + sumResult
-})
-
-for (let i = 0; i<name.length; i=i+1)
-    sum = sum + name[i]
-console.log(sum)
 
 // сделать перебор 5 разных массивов через for и  foreach
 // Создаем 5 разных массивов
@@ -99,5 +118,3 @@ allArrays.forEach((array, index) => {
 });
 
 
-closeButton.addEventListener('click', onCloseButtonClick)
-button.addEventListener('click', onButtonClick)
