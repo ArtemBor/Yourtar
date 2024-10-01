@@ -116,5 +116,3 @@ console.log("\nПеребор массивов с помощью forEach:");
 allArrays.forEach((array, index) => {
     console.log(`Массив ${index + 1}:`, array);
 });
-
-

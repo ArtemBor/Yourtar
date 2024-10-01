@@ -12,6 +12,41 @@
 <body>
    <header class="main-header">
     <img class="main-header__image" src="./images/logo.svg" alt="Логотип YourTar"> 
+    <!-- <div class="main-header__desktop">
+        <div class="main-header__desktop-menu">О проекте</div>
+        <div class="main-header__desktop-menu">Преимущества</div>
+        <div class="main-header__desktop-menu">Этапы работы</div>
+        <div class="main-header__desktop-menu">Расчет стоимости</div>
+        <div class="main-header__desktop-menu">Связь с нами</div>
+    </div> -->
+    <ul class="main-header__desktop"> 
+        <!-- list item Элемент списка -->
+        <li class="main-header__desktop-menu">
+            <a class="link" href="#aboutproject">
+                О проекте
+            </a> 
+        </li>
+        <li class="main-header__desktop-menu">
+            <a href="#benefit">
+                Преимущества
+            </a>
+        </li>
+        <li class="main-header__desktop-menu">
+            <a href="#algorithm">
+                Этапы работы
+            </a>
+        </li>
+        <li class="main-header__desktop-menu">
+            <a href="#calculator">
+                Расчет стоимости
+            </a>
+        </li>
+        <li class="main-header__desktop-menu">
+            <a href="#action">
+                Связь с нами
+            </a>
+        </li>
+    </ul>
     <a class="main-header__tel" href="tel:+7 (999) 999-99-99"> 
         <img class="main-header__tel-img" src="./images/phone-telephone.svg" alt="Телефон">
         <p class="main-header__tel-number"> 
@@ -61,13 +96,16 @@
         </ul>
     </div>
    </header> 
-   <section class="about container" id="develop">
+   <section class="container about" id="develop">
     <h1>
         Разработка сайтов и мобильных приложений 
         <p class="about__title-text"> в 2 раза быстрее </p>
     </h1>
-    <p class="about__title-text-info">
+    <p class="about__title-text-info1">
         Не тратьте время на разработку стандартного функционала ­– подключите наши решения!
+    </p>
+    <p class="about__title-text-info2">
+        Не тратьте время на разработку стандартного функционала ­– подключите наши решения и сосредоточьтесь на уникальных задачах вашего проекта!
     </p>
 
     <div class="about__actions">
@@ -196,21 +234,27 @@
         С помощью данного калькулятора вы можете легко расчитать примерную стоимость разбработки программного обеспечения с нашим функционалом
     </p>
 <div class="calculator__list">
-    <h3 class="calculator__list-info">
-        Выберите тип платформы
-    </h3>
-<div class="radio">
-    <input checked name="platform" id="app" type="radio">
-    <label for="app">
-        Мобильное приложение
-    </label>
-</div>
-<div class="radio" style="margin-bottom: -8px;"> 
-    <input name="platform" id="web" type="radio">
-    <label for="web">
-        Веб-сайт
-    </label>
-</div>
+    <div class="calculator__desktop">
+    <div class="calculator__list-item">
+        <h3 class="calculator__list-info">
+            Выберите тип платформы
+        </h3>
+    <div class="calculator__list-radio">
+        <div class="radio">
+            <input checked name="platform" id="app" type="radio">
+            <label for="app">
+                Мобильное приложение
+            </label>
+        </div>
+        <div class="radio"> 
+            <input name="platform" id="web" type="radio">
+            <label for="web">
+                Веб-сайт
+            </label>
+        </div>
+    </div>
+    </div>
+    <div class="calculator__list-item">
     <h3 class="calculator__list-info">
     Выберите бизнес-задачи для вашего проекта
     </h3>
@@ -426,6 +470,216 @@
                     </ul>
                 </div>
             </li>
+            <li class="calculator__modules-item select--hidden">
+                <div class="select">
+                    <button class="select__button">
+                        <p class="select__button-text">
+                            Модуль
+                        </p>
+                        <img class="select__button-img" src="./images/arroy.svg" alt="Открыть">
+                    </button>
+                    <ul class="select__options">
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m61" id="m61" type="checkbox">
+                                <label for="m61">Подмодуль1</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m62" id="m62" type="checkbox">
+                                <label for="m62">Подмодуль2</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m63" id="m63" type="checkbox">
+                                <label for="m63">Подмодуль3</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m64" id="m64" type="checkbox">
+                                <label for="m64">Подмодуль4</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m65" id="m65" type="checkbox">
+                                <label for="m65">Подмодуль5</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="calculator__modules-item select--hidden">
+                <div class="select">
+                    <button class="select__button">
+                        <p class="select__button-text">
+                            Модуль
+                        </p>
+                        <img class="select__button-img" src="./images/arroy.svg" alt="Открыть">
+                    </button>
+                    <ul class="select__options">
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m71" id="m71" type="checkbox">
+                                <label for="m71">Подмодуль1</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m72" id="m72" type="checkbox">
+                                <label for="m72">Подмодуль2</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m73" id="m73" type="checkbox">
+                                <label for="m73">Подмодуль3</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m74" id="m74" type="checkbox">
+                                <label for="m74">Подмодуль4</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m75" id="m75" type="checkbox">
+                                <label for="m75">Подмодуль5</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="calculator__modules-item select--hidden">
+                <div class="select">
+                    <button class="select__button">
+                        <p class="select__button-text">
+                            Модуль
+                        </p>
+                        <img class="select__button-img" src="./images/arroy.svg" alt="Открыть">
+                    </button>
+                    <ul class="select__options">
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m81" id="m81" type="checkbox">
+                                <label for="m81">Подмодуль1</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m82" id="m82" type="checkbox">
+                                <label for="m82">Подмодуль2</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m83" id="m83" type="checkbox">
+                                <label for="m83">Подмодуль3</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m84" id="m84" type="checkbox">
+                                <label for="m84">Подмодуль4</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m85" id="m85" type="checkbox">
+                                <label for="m85">Подмодуль5</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="calculator__modules-item select--hidden">
+                <div class="select">
+                    <button class="select__button">
+                        <p class="select__button-text">
+                            Модуль
+                        </p>
+                        <img class="select__button-img" src="./images/arroy.svg" alt="Открыть">
+                    </button>
+                    <ul class="select__options">
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m91" id="m91" type="checkbox">
+                                <label for="m91">Подмодуль1</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m92" id="m92" type="checkbox">
+                                <label for="m92">Подмодуль2</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m93" id="m93" type="checkbox">
+                                <label for="m93">Подмодуль3</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m94" id="m94" type="checkbox">
+                                <label for="m94">Подмодуль4</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m95" id="m95" type="checkbox">
+                                <label for="m95">Подмодуль5</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="calculator__modules-item select--hidden">
+                <div class="select">
+                    <button class="select__button">
+                        <p class="select__button-text">
+                            Модуль
+                        </p>
+                        <img class="select__button-img" src="./images/arroy.svg" alt="Открыть">
+                    </button>
+                    <ul class="select__options">
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m101" id="m101" type="checkbox">
+                                <label for="m101">Подмодуль1</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m102" id="m102" type="checkbox">
+                                <label for="m102">Подмодуль2</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m103" id="m103" type="checkbox">
+                                <label for="m103">Подмодуль3</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m104" id="m104" type="checkbox">
+                                <label for="m104">Подмодуль4</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox select__options-checkbox">
+                                <input name="m105" id="m105" type="checkbox">
+                                <label for="m105">Подмодуль5</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
         </ul>
         <button class="calculator__modules-info">
             <p class="calculator__modules-text">
@@ -433,11 +687,13 @@
             </p>
             <img class="select__button-img" src="./images/arroy.svg" alt="Открыть">
         </button>
-        
+    </div> 
     </div>
+    <div class="calculator__list-item">
     <h3 class="calculator__list-info">
             Выберите свою роль в данном проекте
     </h3>
+    <div class="calculator__list-radio">
 <div class="radio radio--primary">
         <input checked name="user" id="developer" type="radio">
         <label for="developer">
@@ -452,22 +708,28 @@
             Клиент
         </label>
 </div>
-    <h3 class="calculator__list-info">
+</div>
+</div>
+<div class="calculator__list-item calculator__list-item--primary">
+    <h3 class="calculator__list-info calculator__list-info--primary">
         Укажите примерную сроки и стоимость вашего проекта
     </h3>
     
     <div class="field field--primary">
-        <input name="price" id="price" type="text" value="100 000 ₽">
+        <input name="price" id="price" type="text" placeholder="100 000 ₽">
         <label for="price">
             Стоимость
         </label>
     </div>
     <div class="field field--primary">
-        <input name="deadline" id="deadline" type="text" value="8 мес">
+        <input name="deadline" id="deadline" type="text" placeholder="8 мес">
         <label for="deadline">
             Сроки
         </label>
     </div>
+    </div>
+</div>
+<div class="calculator__desktop-table">
     <div class="calculator__table">
         <table>
             <caption>
@@ -602,6 +864,7 @@
         </p>
     </div>
 </div>
+</div>
 
    </section>
    <section class="container algorithm" id="algorithm">
@@ -666,7 +929,7 @@
     <div class="spoiler">
         <div class="spoiler__header">
             <p class="spoiler__text">
-                Какой-то длинный вопрос 1
+                Какой-то длинный вопрос
             </p>
             <button class="spoiler__button">
                 <img class="spoiler__button-img" src="./images/Icon.svg" alt="Плюс">
@@ -681,7 +944,7 @@
     <div class="spoiler">
         <div class="spoiler__header">
             <p class="spoiler__text">
-                Какой-то длинный вопрос 2
+                Какой-то длинный вопрос
             </p>
             <button class="spoiler__button">
                 <img class="spoiler__button-img" src="./images/Icon.svg" alt="Плюс">
@@ -696,7 +959,37 @@
     <div class="spoiler">
         <div class="spoiler__header">
             <p class="spoiler__text">
-                Какой-то длинный вопрос 3
+                Какой-то длинный вопрос
+            </p>
+            <button class="spoiler__button">
+                <img class="spoiler__button-img" src="./images/Icon.svg" alt="Плюс">
+            </button>
+        </div>
+        <div class="spoiler__content">
+            <p class="spoiler__text spoiler__text--primary">
+                Ответ
+            </p>
+        </div>
+    </div>
+    <div class="spoiler">
+        <div class="spoiler__header">
+            <p class="spoiler__text">
+                Какой-то длинный вопрос
+            </p>
+            <button class="spoiler__button">
+                <img class="spoiler__button-img" src="./images/Icon.svg" alt="Плюс">
+            </button>
+        </div>
+        <div class="spoiler__content">
+            <p class="spoiler__text spoiler__text--primary">
+                Ответ
+            </p>
+        </div>
+    </div>
+    <div class="spoiler">
+        <div class="spoiler__header">
+            <p class="spoiler__text">
+                Какой-то длинный вопрос
             </p>
             <button class="spoiler__button">
                 <img class="spoiler__button-img" src="./images/Icon.svg" alt="Плюс">
@@ -776,15 +1069,19 @@
             </li>
         </ul>
         <ul class="footer__about-project-img">
-            <li class="footer__about-project-img-fsi">
+            <li class="footer__about-project-img-size375">
                 <img src="./images/fsi.svg" alt="Фонд содействия инновациям">
             </li>
-            <li>
+            <li class="footer__about-project-img-size768">
+                <img src="./images/fsi768.svg" alt="Фонд содействия инновациям">
+            </li>
+            <li class="footer__about-project-img-size375">
                 <img src="./images/scolcovo.svg" alt="Сколково">
             </li>
+            <li class="footer__about-project-img-size768">
+                <img src="./images/scolcovo768.svg" alt="Сколково">
+            </li>
         </ul>
-    </div>
-    <div class="yourtar-info">
         <div class="yourtar-info-connection">
             <h3 class="yourtar-info-connection__title">
                 Свяжитесь с нами
@@ -823,6 +1120,9 @@
              </ul>
         </div>
     </div>
+    <!-- <div class="yourtar-info">
+        
+    </div> -->
     <div class="rights">
         <p class="rights__yourtar">
             ООО «ЁРТАР» © Все права защищены / 2024
