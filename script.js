@@ -116,3 +116,71 @@ console.log("\nПеребор массивов с помощью forEach:");
 allArrays.forEach((array, index) => {
     console.log(`Массив ${index + 1}:`, array);
 });
+
+// Факториал числа: Напиши функцию, которая принимает число и возвращает его факториал, используя цикл for.
+
+function factorial (n) {
+    if (n<0) {
+        return 'Ne opredelit'
+    }
+    let result = 1
+    for (i = 1; i<=n; i++) {
+        result *= i;
+    }
+        return result
+}
+console.log (factorial(3))
+
+// Реверс строки: Создай функцию, которая принимает строку и возвращает ее реверс (например, "hello" → "olleh").
+
+function reversString (stroka) {
+    let newString = '';
+
+    for (let i = stroka.length - 1; i>=0; i-- ) {
+        newString += stroka[i]
+    }
+    return newString
+}
+console.log (reversString('hello'))
+
+// Сумма элементов массива: Создай функцию, которая принимает массив чисел и возвращает их сумму с использованием цикла for.
+
+function sumArray (arr) {
+    let sum = 0;
+    
+    for (let i = 0; i<arr.length; i++ ){
+        sum += arr[i]
+    }
+    return sum;
+}
+console.log(sumArray([1, 2, 3, 4, 5]))
+
+// Нахождение максимального числа: Создай функцию, которая находит максимальное число в массиве чисел, используя цикл.
+
+function maxNumberArray (array) {
+    // return Math.max (...array)
+    let max = array[0]
+
+    for (let i = 1; i<array.length; i++) {
+        if (array[i] > max) {
+            max = array[i]
+        }
+    }
+    return max
+}
+console.log (maxNumberArray([1,10,251,23,100]))
+
+function prinimaetChislo (n) {
+    
+    for (i=0; i<=n; i++) {
+        console.log (i)
+    }
+}
+prinimaetChislo (5)
+
+let a = [1, 2, 3, 4, 5];
+
+
+a.forEach (function (i) {
+    console.log(i)
+})
